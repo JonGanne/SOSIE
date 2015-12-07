@@ -52,6 +52,13 @@ PRIMARY KEY(IdEnseignant),
 FOREIGN KEY(IdUtilisateur) REFERENCES Utilisateurs(IdUtilisateur)
 );
 
+CREATE TABLE Modules
+(
+    IdModule int NOT NULL AUTO_INCREMENT,
+    Nom varchar(20),
+    PRIMARY KEY(IdModule)
+);
+
 /* Creation de la table cours */
 CREATE TABLE Cours(
     IdCours int NOT NULL AUTO_INCREMENT,
